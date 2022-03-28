@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    display: flex;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 16vw;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.for-enterprise {
+    padding: 10px 24px;
+    color: #0795B7;
+    margin-right: 64px;
+    border: 2px solid transparent;
+}
+
+.for-enterprise:hover {
+    border: 2px solid #0795B7;
+    border-radius: 18px;
+}
+
+.header-btn {
+    padding: 10px 32px;
+    border-radius: 18px;
+    background-color: #0795B7;
+    color: #000;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+
+/* HERO */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 84px 16vw;
+    padding-bottom: 0px;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+span {
+    color: #0795B7;
+    font-weight: bold;
+}
+
+.hero a {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.hero-div-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 26px;
+}
+
+.hero img {
+    height: 350px;
+    width: auto;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+}
+
+.waves .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 64px 16vw;
+    background-color: #fff;
+    color: #000;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+}
