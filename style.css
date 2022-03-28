@@ -146,5 +146,9 @@ span {
 /* FOOTER */
 
 footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #242424;
+    padding: 32px 16vw;
 }
