@@ -39,7 +39,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 16vw;
+    padding: 40px 16vw;
     padding-bottom: 0;
     margin-bottom: 32px;
     font-size: 22px;
@@ -57,6 +57,7 @@ section {
     border: 2px solid #0795B7;
     border-radius: 18px;
     opacity: 0.9;
+    transition: all 0.3s ease 0s;
 }
 
 .header-btn {
@@ -64,6 +65,7 @@ section {
     border-radius: 18px;
     background-color: #0795B7;
     color: #000;
+    transition: all 0.3s ease 0s;
 }
 
 .header-btn:hover {
@@ -71,7 +73,7 @@ section {
 }
 
 .logo {
-    height: 70px;
+    height: 65px;
     width: auto;
 }
 
@@ -84,7 +86,7 @@ section {
     align-content: center;
     padding: 84px 16vw;
     padding-bottom: 0px;
-    font-size: 54px;
+    font-size: 5vh;
     font-weight: 500;
 }
 
@@ -135,21 +137,41 @@ span {
 
 .info {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     gap: 64px;
-    padding: 64px 16vw;
+    padding: 10vw 16vw;
     background-color: #fff;
     color: #000;
 }
 
+
+.info-container {
+    display: flex;
+}
+
 .title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .card-text {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 21px;
+}
+
+.card {
+    background-color: #fff;
+}
+
+.image {
+    height: 400px;
+    width: auto;
 }
 
 /* Second Info */
@@ -158,19 +180,7 @@ span {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 64px 16vw;
-}
-
-.second-info-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 64px;
-}
-
-.second-info-header p {
-    font-family: 'IBM Plex Mono', serif;
-    font-weight: 400;
-    color: #333;
+    padding: 44px 16vw;
 }
 
 .benefit-img {
@@ -200,11 +210,24 @@ span {
     padding-top: 16px;
 }
 
+.pre-footer-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 104px;
+}
+
+.pre-footer-header p {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 3vh;
+}
+
 
 /* PRE-FOOTER */
 
 .pre-footer {
-    background-image: url('img/Success-blackrock.jpg');
+    background-image: url('img/Success-full-blackrock.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
