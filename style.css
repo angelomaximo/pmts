@@ -41,7 +41,7 @@ a {
 
 @media only screen and (width: 768px) {
     .header {
-        padding: 40px 8vw 0 8vw;
+        padding: 40px 4vw 0 4vw;
     }
 }
 
@@ -108,7 +108,7 @@ h2 {
 @media only screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
-        padding: 0 8vw 2vh 8vw;
+        padding: 0 4vw 2vh 4vw;
     }
 }
 
@@ -167,7 +167,7 @@ span {
 @media only screen and (max-width: 768px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
-        padding: 7.5vh 8vw;
+        padding: 7.5vh 4vw;
     }
 }
 
@@ -216,7 +216,7 @@ span {
 
 @media only screen and (max-width: 768px) {
     .cta {
-        padding: 12vh 8vw;
+        padding: 12vh 4vw;
     }
 }
 
@@ -248,13 +248,13 @@ footer {
 
 @media only screen and (max-width: 768px) {
     footer {
-        padding: 32px 8vw;
+        padding: 32px 4vw;
     }
     .line-container {
-        padding: 0px 8vw;
+        padding: 0px 4vw;
     }
     .copyright-div {
-        padding: 32px 8vw;
+        padding: 32px 4vw;
     }
 }
 
