@@ -13,7 +13,7 @@ html, body {
 
 body {
     display: grid;
-    background-color: #121212;
+    background-color: #101010;
     background-image: linear-gradient(180deg, #101010, #151515, #101010);
     color: #fff;
     font-family: 'Roboto', sans-serif;
