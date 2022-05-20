@@ -231,7 +231,11 @@ span {
     -moz-text-fill-color: transparent;
 }
 
-
+@media only screen and (max-width: 768px) {
+    .cta h1 {
+        font-size: 9vw;
+    }
+}
 
 /* TESTIMONIAL GRID */
 
