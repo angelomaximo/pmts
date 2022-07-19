@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    height: 100vh;
+}
+
+h2, h3, p {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, rgb(9, 173, 213), rgb(159, 45, 211));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.sub-headline {
+    color: #bebebe;
+}
+
+p {
+    font-size: 24px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+
+
+
+nav {
+    height: 70px;
+}
+
+
+
+
+.hero {
+    margin: 18px 15vw;
+    display: grid;
+    justify-content: left;
+}
+
+
+
+
+.container-links {
+    margin: 10vh 15vw;
+    display: grid;
+    justify-content: left;
+}
+
+.container-links a {
+    font-size: 18px;
+}
+
+
+
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    flex: 1;
+}
