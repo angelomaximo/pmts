@@ -7,26 +7,12 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: #141414;
+    background-color: #121212;
     color: #fff;
     height: 100vh;
-}
-
-h2, h3, p {
     font-family: "Poppins", sans-serif;
-}
-
-h1 {
-    font-family: "Montserrat Alternates", serif;
-    font-weight: bold;
-    background-image: linear-gradient(45deg, rgb(9, 173, 213), rgb(159, 45, 211));
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
 }
 
 
@@ -34,12 +20,13 @@ ul {
     list-style-type: none;
 }
 
-.sub-headline {
-    color: #bebebe;
+p {
+    font-family: sans-serif;
+    font-size: 24px;
 }
 
-p {
-    font-size: 24px;
+.sub-headline {
+    color: #bebebe;
 }
 
 hr {
@@ -48,24 +35,9 @@ hr {
     background-color: #333;
 }
 
-
-
-
 nav {
     height: 70px;
 }
-
-
-
-
-.hero {
-    margin: 18px 20vw;
-    display: grid;
-    justify-content: left;
-}
-
-
-
 
 .container-links {
     margin: 10vh 20vw;
@@ -73,16 +45,32 @@ nav {
     justify-content: left;
 }
 
-.container-links a {
-    font-size: 18px;
-}
-
-
-
-
 .parent {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     flex: 1;
+}
+
+.container {
+    margin-top: 30vh;
+    padding: 50px;
+    background-color: rgb(239, 239, 239);
+    color: #121212;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 2px rgb(180, 180, 180);
+}
+
+.form {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    width: 200px;
+}
+
+.output {
+    margin-top: 16px;
+    font-weight: 600;
 }
