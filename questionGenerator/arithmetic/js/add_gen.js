@@ -35,18 +35,14 @@ let i, j;
 difficultyBtn.addEventListener('click', () => {
     difficulty = difficultyInp.value;
 
-    result1 = getQuestion(difficulty, a, b, questionLabel1);
-    result2 = getQuestion(difficulty, c, d, questionLabel2);
-    result3 = getQuestion(difficulty, e, f, questionLabel3);
-    result4 = getQuestion(difficulty, g, h, questionLabel4);
-    result5 = getQuestion(difficulty, i, j, questionLabel5);
-})
+    result1 = getArithmeticQuestion(difficulty, a, b, questionLabel1, "+");
+    result2 = getArithmeticQuestion(difficulty, c, d, questionLabel2, "+");
+    result3 = getArithmeticQuestion(difficulty, e, f, questionLabel3, "+");
+    result4 = getArithmeticQuestion(difficulty, g, h, questionLabel4, "+");
+    result5 = getArithmeticQuestion(difficulty, i, j, questionLabel5, "+");
+});
 
-
-
-// you can put these inside one big function. Even export. Refactor and make them pure.
-
-function getQuestion(difficulty, x, y, questionLabel) {
+function getArithmeticQuestion(difficulty, x, y, questionLabel, operand) {
     if (difficulty == 1) {
         x = getRandomNum(0, 10);
         y = getRandomNum(0, 10);
@@ -63,9 +59,20 @@ function getQuestion(difficulty, x, y, questionLabel) {
         x = getRandomNum(10000, 100000);
         y = getRandomNum(10000, 100000);
     }
-    questionLabel.innerHTML = `${x} + ${y} = ?`;
 
-    return x + y;
+    questionLabel.innerHTML = `${x} ${operand} ${y} = ?`;
+
+    if (operand == "+" || operand == "plus" || operand == "add" || operand == "addition") {
+        return x + y;
+    } else if (operand == "-" || operand == "minus" || operand == "subtract" || operand == "subtraction") {
+        return x - y;
+    } else if (operand == "*" || operand == "times" || operand == "multiply" || operand == "multiplication") {
+        return x * y;
+    } else if (operand == "/" || operand == "divide" || operand == "division") {
+        return x / y;
+    } else {
+        console.log("Input a primitive operand");
+    }
 }
 
 // PART 2 -- CHECK THE ANSWER
