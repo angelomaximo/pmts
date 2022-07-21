@@ -39,13 +39,21 @@ nav {
     height: 70px;
 }
 
+.breadcrumb {
+    background-color: inherit;
+}
+
+.breadcrumb a {
+    color: #bebebe;
+}
+
 .container {
     margin-top: 30vh;
     padding: 50px;
-    background-color: rgb(239, 239, 239);
-    color: #121212;
+    background-color: #191919;
+    color: #bebebe;
     border-radius: 6px;
-    box-shadow: 0px 0px 8px 2px rgb(180, 180, 180);
+    box-shadow: 0px 0px 8px 2px #191919;
 }
 
 .form {

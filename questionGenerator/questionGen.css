@@ -55,6 +55,13 @@ nav {
     height: 70px;
 }
 
+.breadcrumb {
+    background-color: inherit;
+}
+
+.breadcrumb a {
+    color: #bebebe;
+}
 
 
 

@@ -6,6 +6,7 @@ function getRandomNum(min, max) {
 // PART 1 -- SETUP
 const difficultyInp = document.getElementById("difficultyInp");
 const difficultyBtn = document.getElementById("difficultyBtn");
+const operandInp = document.getElementById("operandInp");
 
 const questionLabel1 = document.getElementById("questionLabel1");
 const questionLabel2 = document.getElementById("questionLabel2");
@@ -15,6 +16,8 @@ const questionLabel5 = document.getElementById("questionLabel5");
 
 
 let difficulty;
+let operand;
+
 var result1;
 var result2;
 var result3;
@@ -34,12 +37,13 @@ let i, j;
 
 difficultyBtn.addEventListener('click', () => {
     difficulty = difficultyInp.value;
+    operand = operandInp.value;
 
-    result1 = getArithmeticQuestion(difficulty, a, b, questionLabel1, "+");
-    result2 = getArithmeticQuestion(difficulty, c, d, questionLabel2, "+");
-    result3 = getArithmeticQuestion(difficulty, e, f, questionLabel3, "+");
-    result4 = getArithmeticQuestion(difficulty, g, h, questionLabel4, "+");
-    result5 = getArithmeticQuestion(difficulty, i, j, questionLabel5, "+");
+    result1 = getArithmeticQuestion(difficulty, a, b, questionLabel1, operand);
+    result2 = getArithmeticQuestion(difficulty, c, d, questionLabel2, operand);
+    result3 = getArithmeticQuestion(difficulty, e, f, questionLabel3, operand);
+    result4 = getArithmeticQuestion(difficulty, g, h, questionLabel4, operand);
+    result5 = getArithmeticQuestion(difficulty, i, j, questionLabel5, operand);
 });
 
 function getArithmeticQuestion(difficulty, x, y, questionLabel, operand) {
@@ -58,6 +62,9 @@ function getArithmeticQuestion(difficulty, x, y, questionLabel, operand) {
     } else if (difficulty == 5) {
         x = getRandomNum(10000, 100000);
         y = getRandomNum(10000, 100000);
+    } else {
+        x = getRandomNum(1, 10);
+        y = getRandomNum(1, 10);
     }
 
     questionLabel.innerHTML = `${x} ${operand} ${y} = ?`;
