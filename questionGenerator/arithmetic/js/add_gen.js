@@ -21,25 +21,6 @@ var result3;
 var result4;
 var result5;
 
-
-difficultyBtn.addEventListener('click', () => {
-    difficulty = difficultyInp.value;
-
-
-    result1 = getQuestion1(difficulty);
-    result2 = getQuestion2(difficulty);
-    result3 = getQuestion3(difficulty);
-    result4 = getQuestion4(difficulty);
-    result5 = getQuestion5(difficulty);
-
-
-    questionLabel1.innerHTML = `${a} + ${b} = ?`;
-    questionLabel2.innerHTML = `${c} + ${d} = ?`;
-    questionLabel3.innerHTML = `${e} + ${f} = ?`;
-    questionLabel4.innerHTML = `${g} + ${h} = ?`;
-    questionLabel5.innerHTML = `${i} + ${j} = ?`;
-})
-
 // question 1
 let a, b;
 // question 2
@@ -51,111 +32,40 @@ let g, h;
 // question 5
 let i, j;
 
+difficultyBtn.addEventListener('click', () => {
+    difficulty = difficultyInp.value;
+
+    result1 = getQuestion(difficulty, a, b, questionLabel1);
+    result2 = getQuestion(difficulty, c, d, questionLabel2);
+    result3 = getQuestion(difficulty, e, f, questionLabel3);
+    result4 = getQuestion(difficulty, g, h, questionLabel4);
+    result5 = getQuestion(difficulty, i, j, questionLabel5);
+})
+
+
+
 // you can put these inside one big function. Even export. Refactor and make them pure.
 
-function getQuestion1(difficulty) {
+function getQuestion(difficulty, x, y, questionLabel) {
     if (difficulty == 1) {
-        a = getRandomNum(0, 10);
-        b = getRandomNum(0, 10);
+        x = getRandomNum(0, 10);
+        y = getRandomNum(0, 10);
     } else if (difficulty == 2) {
-        a = getRandomNum(10, 100);
-        b = getRandomNum(10, 100);
+        x = getRandomNum(10, 100);
+        y = getRandomNum(10, 100);
     } else if (difficulty == 3) {
-        a = getRandomNum(100, 1000);
-        b = getRandomNum(100, 1000);
+        x = getRandomNum(100, 1000);
+        y = getRandomNum(100, 1000);
     } else if (difficulty == 4) {
-        a = getRandomNum(1000, 10000);
-        b = getRandomNum(1000, 10000);
+        x = getRandomNum(1000, 10000);
+        y = getRandomNum(1000, 10000);
     } else if (difficulty == 5) {
-        a = getRandomNum(10000, 100000);
-        b = getRandomNum(10000, 100000);
+        x = getRandomNum(10000, 100000);
+        y = getRandomNum(10000, 100000);
     }
+    questionLabel.innerHTML = `${x} + ${y} = ?`;
 
-    return a + b;
-}
-
-function getQuestion2(difficulty) {
-    if (difficulty == 1) {
-        c = getRandomNum(0, 10);
-        d = getRandomNum(0, 10);
-    } else if (difficulty == 2) {
-        c = getRandomNum(10, 100);
-        d = getRandomNum(10, 100);
-    } else if (difficulty == 3) {
-        c = getRandomNum(100, 1000);
-        d = getRandomNum(100, 1000);
-    } else if (difficulty == 4) {
-        c = getRandomNum(1000, 10000);
-        d = getRandomNum(1000, 10000);
-    } else if (difficulty == 5) {
-        c = getRandomNum(10000, 100000);
-        d = getRandomNum(10000, 100000);
-    }
-
-    return c + d;
-}
-
-function getQuestion3(difficulty) {
-    if (difficulty == 1) {
-        e = getRandomNum(0, 10);
-        f = getRandomNum(0, 10);
-    } else if (difficulty == 2) {
-        e = getRandomNum(10, 100);
-        f = getRandomNum(10, 100);
-    } else if (difficulty == 3) {
-        e = getRandomNum(100, 1000);
-        f = getRandomNum(100, 1000);
-    } else if (difficulty == 4) {
-        e = getRandomNum(1000, 10000);
-        f = getRandomNum(1000, 10000);
-    } else if (difficulty == 5) {
-        e = getRandomNum(10000, 100000);
-        f = getRandomNum(10000, 100000);
-    }
-
-    return e + f;
-}
-
-function getQuestion4(difficulty) {
-    if (difficulty == 1) {
-        g = getRandomNum(0, 10);
-        h = getRandomNum(0, 10);
-    } else if (difficulty == 2) {
-        g = getRandomNum(10, 100);
-        h = getRandomNum(10, 100);
-    } else if (difficulty == 3) {
-        g = getRandomNum(100, 1000);
-        h = getRandomNum(100, 1000);
-    } else if (difficulty == 4) {
-        g = getRandomNum(1000, 10000);
-        h = getRandomNum(1000, 10000);
-    } else if (difficulty == 5) {
-        g = getRandomNum(10000, 100000);
-        h = getRandomNum(10000, 100000);
-    }
-
-    return g + h;
-}
-
-function getQuestion5(difficulty) {
-    if (difficulty == 1) {
-        i = getRandomNum(0, 10);
-        j = getRandomNum(0, 10);
-    } else if (difficulty == 2) {
-        i = getRandomNum(10, 100);
-        j = getRandomNum(10, 100);
-    } else if (difficulty == 3) {
-        i = getRandomNum(100, 1000);
-        j = getRandomNum(100, 1000);
-    } else if (difficulty == 4) {
-        i = getRandomNum(1000, 10000);
-        j = getRandomNum(1000, 10000);
-    } else if (difficulty == 5) {
-        i = getRandomNum(10000, 100000);
-        j = getRandomNum(10000, 100000);
-    }
-
-    return i + j;
+    return x + y;
 }
 
 // PART 2 -- CHECK THE ANSWER
