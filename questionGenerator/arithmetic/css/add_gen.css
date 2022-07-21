@@ -39,19 +39,6 @@ nav {
     height: 70px;
 }
 
-.container-links {
-    margin: 10vh 20vw;
-    display: grid;
-    justify-content: left;
-}
-
-.parent {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    flex: 1;
-}
-
 .container {
     margin-top: 30vh;
     padding: 50px;
@@ -73,4 +60,15 @@ nav {
 .output {
     margin-top: 16px;
     font-weight: 600;
+}
+
+footer {
+    margin-top: 10vh;
+    height: 200px;
+    display: grid;
+    align-items: center;
+}
+
+.footer-btn {
+    width: 100px!important;
 }
