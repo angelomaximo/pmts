@@ -79,3 +79,25 @@ nav {
     width: 60%;
     margin-bottom: 2px;
 }
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: 80%;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 36px;
+}
+
+.footer-form {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.feedbackBtn {
+    margin-left: -5px;
+    border-radius: 0px 32px 32px 0px;
+}
+
