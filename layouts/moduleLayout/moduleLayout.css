@@ -1,11 +1,83 @@
 @import url(../root.css);
 
-
-.main {
-    height: 100vh;
-    margin: 10vh 10vw;
+:root {
+    --sidebar-width: 300px;
 }
 
+
+/* Side bar */
+.sideBar {
+    background-color: #fff;
+    margin-top: 50px; /* Same as the width of the nav */
+
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: var(--sidebar-width); /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+}
+
+.sideBar-btn {
+    border-radius: 36px;
+}
+
+.search {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.searchIcon {
+    height: 20px;
+    margin-right: 8px;
+}
+
+
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+
+/* MAIN */
+
+.main {
+    height: 100%;
+    margin-top: 50px; /* Same as the width of the nav */
+    margin-left: var(--sidebar-width); /* Same as the width of the sidebar */
+    padding: 45px 10px;
+
+    background-color: var(--w-main-bg-color);
+    border-radius: 36px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* MAIN ELEMENTS */
 
 .moduleContainer {
     display: grid;
@@ -13,8 +85,11 @@
     align-items: center;
     height: 200px;
     padding: 16px;
+    width: 80%;
+    flex: 1;
 
-    background-color: #dedede;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 5px #c5c5c5;
     border-radius: 16px;
 }
 
